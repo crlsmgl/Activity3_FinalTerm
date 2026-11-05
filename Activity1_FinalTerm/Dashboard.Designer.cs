@@ -33,13 +33,16 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5D);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -47,42 +50,39 @@
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,6 +105,58 @@
             this.panel1.Size = new System.Drawing.Size(206, 666);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button7
+            // 
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(0, 401);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(206, 40);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Settings";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(0, 350);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(206, 40);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Stock Flow";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(11, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 2);
+            this.label3.TabIndex = 3;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(206, 77);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Inventory Management System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button5
             // 
@@ -203,18 +255,6 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(206, 77);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Inventory Management System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -283,15 +323,6 @@
             this.toolStripContainer1.Text = "toolStripContainer1";
             this.toolStripContainer1.TopToolStripPanelVisible = false;
             // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(11, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 2);
-            this.label3.TabIndex = 3;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // txtUsername
             // 
             this.txtUsername.AutoSize = true;
@@ -316,6 +347,29 @@
             this.panel2.Size = new System.Drawing.Size(1105, 78);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Activity1_FinalTerm.Properties.Resources.user;
+            this.pictureBox2.Location = new System.Drawing.Point(928, 23);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Activity1_FinalTerm.Properties.Resources.notification;
+            this.pictureBox1.Location = new System.Drawing.Point(878, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label4
             // 
@@ -354,6 +408,29 @@
             this.panel3.Size = new System.Drawing.Size(175, 71);
             this.panel3.TabIndex = 6;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(9, 35);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 25);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "14, 240";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label7.Location = new System.Drawing.Point(10, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 21);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Total Products";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.SteelBlue;
@@ -371,6 +448,28 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(175, 71);
             this.panel4.TabIndex = 8;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(10, 35);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 25);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "₱440, 677";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label8.Location = new System.Drawing.Point(11, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(141, 21);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Total Stock Value";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel5
             // 
@@ -390,6 +489,27 @@
             this.panel7.Size = new System.Drawing.Size(175, 71);
             this.panel7.TabIndex = 8;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(9, 35);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(34, 25);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "12";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label9.Location = new System.Drawing.Point(10, 10);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 21);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Low Stock";
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Goldenrod;
@@ -408,48 +528,15 @@
             this.panel9.Size = new System.Drawing.Size(175, 71);
             this.panel9.TabIndex = 8;
             // 
-            // panel10
+            // label14
             // 
-            this.panel10.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel10.Location = new System.Drawing.Point(875, 144);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(175, 71);
-            this.panel10.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label7.Location = new System.Drawing.Point(10, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 21);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Total Products";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label8.Location = new System.Drawing.Point(11, 10);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 21);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Total Stock Value";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label9.Location = new System.Drawing.Point(10, 10);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 21);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Low Stock";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(10, 35);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(23, 25);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "5";
             // 
             // label10
             // 
@@ -463,100 +550,13 @@
             this.label10.Text = "Out of Stock";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label11
+            // panel10
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(9, 35);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 25);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "14, 240";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(10, 35);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 25);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "₱440, 677";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(9, 35);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 25);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "12";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(10, 35);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(23, 25);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "5";
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 350);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(206, 40);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Stock Flow";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(0, 401);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(206, 40);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Settings";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Activity1_FinalTerm.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(928, 23);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Activity1_FinalTerm.Properties.Resources.notification;
-            this.pictureBox1.Location = new System.Drawing.Point(878, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.panel10.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel10.Location = new System.Drawing.Point(875, 144);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(175, 71);
+            this.panel10.TabIndex = 9;
             // 
             // chart1
             // 
@@ -609,6 +609,8 @@
             this.toolStripContainer1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -617,8 +619,6 @@
             this.panel7.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
