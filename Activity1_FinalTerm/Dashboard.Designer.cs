@@ -326,11 +326,11 @@
             // txtUsername
             // 
             this.txtUsername.AutoSize = true;
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(960, 31);
             this.txtUsername.MaximumSize = new System.Drawing.Size(140, 0);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(123, 13);
+            this.txtUsername.Size = new System.Drawing.Size(127, 15);
             this.txtUsername.TabIndex = 3;
             this.txtUsername.Text = "Carlos Miguel Calivara";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
