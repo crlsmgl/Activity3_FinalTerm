@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -79,6 +81,48 @@
     <Compile Include="RoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ucCustomers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCustomers.Designer.cs">
+      <DependentUpon>ucCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDashboard.Designer.cs">
+      <DependentUpon>ucDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucInvoicesHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucInvoicesHistory.Designer.cs">
+      <DependentUpon>ucInvoicesHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPOS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPOS.Designer.cs">
+      <DependentUpon>ucPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProducts.Designer.cs">
+      <DependentUpon>ucProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSalesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSalesReport.Designer.cs">
+      <DependentUpon>ucSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettings.Designer.cs">
+      <DependentUpon>ucSettings.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +141,27 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCustomers.resx">
+      <DependentUpon>ucCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDashboard.resx">
+      <DependentUpon>ucDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucInvoicesHistory.resx">
+      <DependentUpon>ucInvoicesHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPOS.resx">
+      <DependentUpon>ucPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProducts.resx">
+      <DependentUpon>ucProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSalesReport.resx">
+      <DependentUpon>ucSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettings.resx">
+      <DependentUpon>ucSettings.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

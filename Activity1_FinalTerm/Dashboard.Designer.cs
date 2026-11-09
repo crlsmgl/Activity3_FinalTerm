@@ -28,22 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 5D);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnSalesReport = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.btnPOS = new System.Windows.Forms.Button();
+            this.btnInvoices = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -56,49 +51,31 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.object_f98a018d_9abc_4f2c_8abb_0d2738360cca = new System.Windows.Forms.Label();
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49 = new System.Windows.Forms.Label();
+            this.object_89685a54_714d_4e71_a47f_6face5ff2c47 = new System.Windows.Forms.Label();
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btnSettings);
+            this.panel1.Controls.Add(this.btnSalesReport);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnCustomers);
+            this.panel1.Controls.Add(this.btnProducts);
+            this.panel1.Controls.Add(this.btnPOS);
+            this.panel1.Controls.Add(this.btnInvoices);
+            this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
@@ -106,36 +83,37 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button7
+            // btnSettings
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(0, 401);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(206, 40);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Settings";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Location = new System.Drawing.Point(0, 401);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(206, 40);
+            this.btnSettings.TabIndex = 7;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // button6
+            // btnSalesReport
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 350);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(206, 40);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Stock Flow";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnSalesReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalesReport.FlatAppearance.BorderSize = 0;
+            this.btnSalesReport.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnSalesReport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnSalesReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesReport.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesReport.Location = new System.Drawing.Point(0, 350);
+            this.btnSalesReport.Name = "btnSalesReport";
+            this.btnSalesReport.Size = new System.Drawing.Size(206, 40);
+            this.btnSalesReport.TabIndex = 6;
+            this.btnSalesReport.Text = "Sales Report";
+            this.btnSalesReport.UseVisualStyleBackColor = true;
+            this.btnSalesReport.Click += new System.EventHandler(this.btnSalesReport_Click);
             // 
             // label3
             // 
@@ -154,88 +132,91 @@
             this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.label1.Size = new System.Drawing.Size(206, 77);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Inventory Management System";
+            this.label1.Text = "Sales Report Management System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button5
+            // btnCustomers
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(0, 299);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(206, 40);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Suppliers";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCustomers.FlatAppearance.BorderSize = 0;
+            this.btnCustomers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnCustomers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomers.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomers.Location = new System.Drawing.Point(0, 299);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(206, 40);
+            this.btnCustomers.TabIndex = 5;
+            this.btnCustomers.Text = "Customers";
+            this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
-            // button4
+            // btnProducts
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 248);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(206, 40);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Reports";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProducts.FlatAppearance.BorderSize = 0;
+            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProducts.Location = new System.Drawing.Point(0, 248);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(206, 40);
+            this.btnProducts.TabIndex = 4;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
-            // button3
+            // btnPOS
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 196);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(206, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Categories";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPOS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPOS.FlatAppearance.BorderSize = 0;
+            this.btnPOS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnPOS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnPOS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPOS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPOS.Location = new System.Drawing.Point(0, 196);
+            this.btnPOS.Name = "btnPOS";
+            this.btnPOS.Size = new System.Drawing.Size(206, 40);
+            this.btnPOS.TabIndex = 3;
+            this.btnPOS.Text = "POS";
+            this.btnPOS.UseVisualStyleBackColor = true;
+            this.btnPOS.Click += new System.EventHandler(this.btnPOS_Click);
             // 
-            // button2
+            // btnInvoices
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(206, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Items";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnInvoices.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInvoices.FlatAppearance.BorderSize = 0;
+            this.btnInvoices.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnInvoices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnInvoices.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInvoices.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInvoices.Location = new System.Drawing.Point(0, 144);
+            this.btnInvoices.Name = "btnInvoices";
+            this.btnInvoices.Size = new System.Drawing.Size(206, 40);
+            this.btnInvoices.TabIndex = 2;
+            this.btnInvoices.Text = "Invoices";
+            this.btnInvoices.UseVisualStyleBackColor = true;
+            this.btnInvoices.Click += new System.EventHandler(this.btnInvoices_Click);
             // 
-            // button1
+            // btnDashboard
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(0, 91);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Dashboard";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnDashboard.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.Black;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 91);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(206, 40);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click_1);
             // 
             // btnLogout
             // 
@@ -254,16 +235,6 @@
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(221, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 36);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Dashboard";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // BottomToolStripPanel
             // 
@@ -388,196 +359,50 @@
             this.label5.Size = new System.Drawing.Size(898, 2);
             this.label5.TabIndex = 4;
             // 
-            // label6
+            // mainPanel
             // 
-            this.label6.BackColor = System.Drawing.Color.Lime;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(200, 91);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(6, 40);
-            this.label6.TabIndex = 5;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.mainPanel.Location = new System.Drawing.Point(208, 77);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(897, 585);
+            this.mainPanel.TabIndex = 11;
             // 
-            // panel3
+            // object_f98a018d_9abc_4f2c_8abb_0d2738360cca
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(254, 144);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(175, 71);
-            this.panel3.TabIndex = 6;
+            this.object_f98a018d_9abc_4f2c_8abb_0d2738360cca.AutoSize = true;
+            this.object_f98a018d_9abc_4f2c_8abb_0d2738360cca.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.object_f98a018d_9abc_4f2c_8abb_0d2738360cca.Location = new System.Drawing.Point(9, 35);
+            this.object_f98a018d_9abc_4f2c_8abb_0d2738360cca.Name = "object_f98a018d_9abc_4f2c_8abb_0d2738360cca";
+            this.object_f98a018d_9abc_4f2c_8abb_0d2738360cca.Size = new System.Drawing.Size(77, 25);
+            this.object_f98a018d_9abc_4f2c_8abb_0d2738360cca.TabIndex = 10;
             // 
-            // label11
+            // object_c2fb5781_842a_4911_9318_d8fcdb05fe49
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(9, 35);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 25);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "14, 240";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49.AutoSize = true;
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49.ForeColor = System.Drawing.Color.SteelBlue;
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49.Location = new System.Drawing.Point(10, 10);
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49.Name = "object_c2fb5781_842a_4911_9318_d8fcdb05fe49";
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49.Size = new System.Drawing.Size(119, 21);
+            this.object_c2fb5781_842a_4911_9318_d8fcdb05fe49.TabIndex = 10;
             // 
-            // label7
+            // object_89685a54_714d_4e71_a47f_6face5ff2c47
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label7.Location = new System.Drawing.Point(10, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 21);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Total Products";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.object_89685a54_714d_4e71_a47f_6face5ff2c47.AutoSize = true;
+            this.object_89685a54_714d_4e71_a47f_6face5ff2c47.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.object_89685a54_714d_4e71_a47f_6face5ff2c47.Location = new System.Drawing.Point(10, 35);
+            this.object_89685a54_714d_4e71_a47f_6face5ff2c47.Name = "object_89685a54_714d_4e71_a47f_6face5ff2c47";
+            this.object_89685a54_714d_4e71_a47f_6face5ff2c47.Size = new System.Drawing.Size(23, 25);
+            this.object_89685a54_714d_4e71_a47f_6face5ff2c47.TabIndex = 13;
             // 
-            // panel6
+            // object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881
             // 
-            this.panel6.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel6.Location = new System.Drawing.Point(242, 144);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(175, 71);
-            this.panel6.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(464, 144);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(175, 71);
-            this.panel4.TabIndex = 8;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(10, 35);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 25);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "₱440, 677";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label8.Location = new System.Drawing.Point(11, 10);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 21);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Total Stock Value";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel5.Location = new System.Drawing.Point(452, 144);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(175, 71);
-            this.panel5.TabIndex = 9;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Location = new System.Drawing.Point(675, 144);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(175, 71);
-            this.panel7.TabIndex = 8;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(9, 35);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 25);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "12";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label9.Location = new System.Drawing.Point(10, 10);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 21);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Low Stock";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Goldenrod;
-            this.panel8.Location = new System.Drawing.Point(663, 144);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(175, 71);
-            this.panel8.TabIndex = 9;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel9.Controls.Add(this.label14);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Location = new System.Drawing.Point(887, 144);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(175, 71);
-            this.panel9.TabIndex = 8;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(10, 35);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(23, 25);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "5";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(11, 10);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 21);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Out of Stock";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel10.Location = new System.Drawing.Point(875, 144);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(175, 71);
-            this.panel10.TabIndex = 9;
-            // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(242, 248);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.Points.Add(dataPoint1);
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(820, 381);
-            this.chart1.TabIndex = 10;
-            this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click_1);
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881.AutoSize = true;
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881.ForeColor = System.Drawing.Color.OrangeRed;
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881.Location = new System.Drawing.Point(11, 10);
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881.Name = "object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881";
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881.Size = new System.Drawing.Size(104, 21);
+            this.object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881.TabIndex = 13;
             // 
             // Dashboard
             // 
@@ -585,21 +410,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(1102, 663);
-            this.Controls.Add(this.chart1);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.mainPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Dashboard";
             this.Text = "Dashboard";
@@ -611,15 +426,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -628,13 +434,12 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCustomers;
+        private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.Button btnPOS;
+        private System.Windows.Forms.Button btnInvoices;
+        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
         private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
@@ -648,25 +453,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button btnSalesReport;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Label object_f98a018d_9abc_4f2c_8abb_0d2738360cca;
+        private System.Windows.Forms.Label object_c2fb5781_842a_4911_9318_d8fcdb05fe49;
+        private System.Windows.Forms.Label object_89685a54_714d_4e71_a47f_6face5ff2c47;
+        private System.Windows.Forms.Label object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881;
     }
 }

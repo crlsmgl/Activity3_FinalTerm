@@ -11,6 +11,10 @@ namespace Activity1_FinalTerm
         private Color borderColor = Color.MediumSlateBlue;
         private int borderSize = 2;
 
+        // Placeholder fields
+        private string placeholderText = "Select an option...";
+        private Color placeholderColor = Color.DarkGray;
+
         [Category("Appearance Custom")]
         [Description("The custom border color of the control.")]
         public Color BorderColor
@@ -30,6 +34,28 @@ namespace Activity1_FinalTerm
                 UpdateControlHeight();
                 this.Invalidate();
             }
+        }
+
+        // New Placeholder Properties
+        [Category("Appearance Custom")]
+        [Browsable(true)]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        [Description("The text displayed when no item is selected.")]
+        [DefaultValue("Select an option...")]
+        public string PlaceholderText
+        {
+            get => placeholderText;
+            set { placeholderText = value; cmbList.Invalidate(); }
+        }
+
+        [Category("Appearance Custom")]
+        [Browsable(true)]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        [Description("The color of the placeholder text.")]
+        public Color PlaceholderColor
+        {
+            get => placeholderColor;
+            set { placeholderColor = value; cmbList.Invalidate(); }
         }
 
         private ComboBox cmbList;
@@ -156,7 +182,16 @@ namespace Activity1_FinalTerm
         // Clean layout renderer to handle row background highlight colors and centering text
         private void CmbList_DrawItem(object sender, DrawItemEventArgs e)
         {
-            if (e.Index < 0) return;
+            // If the index is -1, it means no item is selected -> Draw the placeholder text!
+            if (e.Index < 0)
+            {
+                if (!string.IsNullOrEmpty(PlaceholderText))
+                {
+                    Rectangle rectPlaceholder = new Rectangle(e.Bounds.X + 2, e.Bounds.Y, e.Bounds.Width, e.Bounds.Height);
+                    TextRenderer.DrawText(e.Graphics, PlaceholderText, e.Font, rectPlaceholder, PlaceholderColor, TextFormatFlags.VerticalCenter);
+                }
+                return;
+            }
 
             e.DrawBackground();
 

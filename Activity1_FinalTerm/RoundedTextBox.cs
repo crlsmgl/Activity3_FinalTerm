@@ -18,6 +18,11 @@ public partial class RoundedTextBox : UserControl
     private bool useSystemPasswordChar = false;
     private char passwordChar = '\0';
 
+    // Placeholder fields
+    private string placeholderText = "";
+    private Color placeholderColor = Color.DarkGray;
+    private bool isPlaceholderActive = false;
+
     public RoundedTextBox()
     {
         innerTextBox = new TextBox();
@@ -41,6 +46,7 @@ public partial class RoundedTextBox : UserControl
     public void Clear()
     {
         innerTextBox.Clear();
+        ApplyPlaceholder();
     }
 
     [Category("Custom Properties")]
@@ -71,6 +77,13 @@ public partial class RoundedTextBox : UserControl
 
     private void UpdatePasswordCharacter()
     {
+        // Do not mask text if the placeholder is currently active
+        if (isPlaceholderActive)
+        {
+            innerTextBox.PasswordChar = '\0';
+            return;
+        }
+
         if (useSystemPasswordChar)
         {
             innerTextBox.PasswordChar = '●';
@@ -99,6 +112,13 @@ public partial class RoundedTextBox : UserControl
     {
         isFocused = true;
         borderColor = borderActiveColor;
+
+        // Remove placeholder when user clicks into the field
+        if (isPlaceholderActive)
+        {
+            RemovePlaceholder();
+        }
+
         this.Invalidate();
     }
 
@@ -106,6 +126,13 @@ public partial class RoundedTextBox : UserControl
     {
         isFocused = false;
         borderColor = borderInactiveColor;
+
+        // Restore placeholder if the field was left empty
+        if (string.IsNullOrWhiteSpace(innerTextBox.Text))
+        {
+            ApplyPlaceholder();
+        }
+
         this.Invalidate();
     }
 
@@ -138,10 +165,72 @@ public partial class RoundedTextBox : UserControl
         set { borderInactiveColor = value; if (!isFocused) { borderColor = value; this.Invalidate(); } }
     }
 
+    [Category("Custom Properties")]
+    [Browsable(true)] // Forces the property to show up in the Properties Window
+    [EditorBrowsable(EditorBrowsableState.Always)]
+    [Description("The text that is displayed when the control is empty and does not have focus.")]
+    [DefaultValue("")]
+    public string PlaceholderText
+    {
+        get => placeholderText;
+        set
+        {
+            placeholderText = value;
+            if (string.IsNullOrWhiteSpace(innerTextBox.Text) && !isFocused)
+            {
+                ApplyPlaceholder();
+            }
+        }
+    }
+
+    [Category("Custom Properties")]
+    [Browsable(true)] // Forces the property to show up in the Properties Window
+    [EditorBrowsable(EditorBrowsableState.Always)]
+    [Description("The color of the placeholder text.")]
+    public Color PlaceholderColor
+    {
+        get => placeholderColor;
+        set
+        {
+            placeholderColor = value;
+            if (isPlaceholderActive)
+            {
+                innerTextBox.ForeColor = value;
+            }
+        }
+    }
+
     public override string Text
     {
-        get => innerTextBox.Text;
-        set => innerTextBox.Text = value;
+        get => isPlaceholderActive ? "" : innerTextBox.Text;
+        set
+        {
+            if (string.IsNullOrWhiteSpace(value) && !isFocused)
+            {
+                ApplyPlaceholder();
+            }
+            else
+            {
+                RemovePlaceholder();
+                innerTextBox.Text = value;
+            }
+        }
+    }
+
+    private void ApplyPlaceholder()
+    {
+        isPlaceholderActive = true;
+        innerTextBox.Text = placeholderText;
+        innerTextBox.ForeColor = placeholderColor;
+        UpdatePasswordCharacter();
+    }
+
+    private void RemovePlaceholder()
+    {
+        isPlaceholderActive = false;
+        innerTextBox.Text = "";
+        innerTextBox.ForeColor = this.ForeColor;
+        UpdatePasswordCharacter();
     }
 
     private void UpdateTextBoxPosition()
@@ -150,7 +239,9 @@ public partial class RoundedTextBox : UserControl
 
         innerTextBox.Font = this.Font;
         innerTextBox.BackColor = this.BackColor;
-        innerTextBox.ForeColor = this.ForeColor;
+
+        // Retain placeholder color if active, otherwise use default control ForeColor
+        innerTextBox.ForeColor = isPlaceholderActive ? placeholderColor : this.ForeColor;
 
         innerTextBox.Height = this.Font.Height + 4;
         int centeredTop = (this.Height - innerTextBox.Height) / 2;
