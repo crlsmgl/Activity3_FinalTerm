@@ -132,7 +132,7 @@
             this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.label1.Size = new System.Drawing.Size(206, 77);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Sales Report Management System";
+            this.label1.Text = "Inventory Management System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 

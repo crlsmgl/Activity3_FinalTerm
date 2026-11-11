@@ -70,7 +70,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(346, 45);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Get started with your Sales Record Management System today.";
+            this.label4.Text = "Get started with your Inventory Management System today.";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -242,6 +242,7 @@
             this.txtConfirmPassword.Location = new System.Drawing.Point(641, 414);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtConfirmPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtConfirmPassword.Size = new System.Drawing.Size(401, 30);
             this.txtConfirmPassword.TabIndex = 12;
             this.txtConfirmPassword.UseSystemPasswordChar = true;
@@ -258,6 +259,7 @@
             this.txtPassword.Location = new System.Drawing.Point(641, 353);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPassword.Size = new System.Drawing.Size(401, 30);
             this.txtPassword.TabIndex = 10;
             this.txtPassword.UseSystemPasswordChar = true;
@@ -274,6 +276,7 @@
             this.txtFullName.Location = new System.Drawing.Point(641, 293);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtFullName.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtFullName.Size = new System.Drawing.Size(401, 30);
             this.txtFullName.TabIndex = 6;
             this.txtFullName.Load += new System.EventHandler(this.roundedTextBox2_Load);
@@ -289,6 +292,7 @@
             this.txtUsername.Location = new System.Drawing.Point(642, 235);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUsername.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtUsername.Size = new System.Drawing.Size(401, 30);
             this.txtUsername.TabIndex = 4;
             this.txtUsername.Load += new System.EventHandler(this.roundedTextBox1_Load_1);

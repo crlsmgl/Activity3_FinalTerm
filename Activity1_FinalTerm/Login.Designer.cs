@@ -36,10 +36,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.roundPictureBox2 = new RoundPictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.roundPictureBox1 = new RoundPictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtPassword = new RoundedTextBox();
             this.txtUsername = new RoundedTextBox();
             this.panel1.SuspendLayout();
@@ -123,7 +123,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(252, 45);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Login to access your Sales Dashboard";
+            this.label4.Text = "Login to access your Inventory Dashboard";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
@@ -153,6 +153,17 @@
             this.panel1.TabIndex = 37;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
+            // roundPictureBox2
+            // 
+            this.roundPictureBox2.CornerRadius = 35;
+            this.roundPictureBox2.Image = global::Activity1_FinalTerm.Properties.Resources.closeup_coins_stack_isolated_black_background;
+            this.roundPictureBox2.Location = new System.Drawing.Point(29, 430);
+            this.roundPictureBox2.Name = "roundPictureBox2";
+            this.roundPictureBox2.Size = new System.Drawing.Size(224, 147);
+            this.roundPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundPictureBox2.TabIndex = 3;
+            this.roundPictureBox2.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -165,6 +176,17 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Master your stock levels flawlessly";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // roundPictureBox1
+            // 
+            this.roundPictureBox1.CornerRadius = 30;
+            this.roundPictureBox1.Image = global::Activity1_FinalTerm.Properties.Resources.fTy_JTo_;
+            this.roundPictureBox1.Location = new System.Drawing.Point(106, 191);
+            this.roundPictureBox1.Name = "roundPictureBox1";
+            this.roundPictureBox1.Size = new System.Drawing.Size(448, 310);
+            this.roundPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundPictureBox1.TabIndex = 0;
+            this.roundPictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -179,28 +201,6 @@
     "ehouse logging discrepancies instantly";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // roundPictureBox2
-            // 
-            this.roundPictureBox2.CornerRadius = 35;
-            this.roundPictureBox2.Image = global::Activity1_FinalTerm.Properties.Resources.closeup_coins_stack_isolated_black_background;
-            this.roundPictureBox2.Location = new System.Drawing.Point(29, 430);
-            this.roundPictureBox2.Name = "roundPictureBox2";
-            this.roundPictureBox2.Size = new System.Drawing.Size(224, 147);
-            this.roundPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roundPictureBox2.TabIndex = 3;
-            this.roundPictureBox2.TabStop = false;
-            // 
-            // roundPictureBox1
-            // 
-            this.roundPictureBox1.CornerRadius = 30;
-            this.roundPictureBox1.Image = global::Activity1_FinalTerm.Properties.Resources.fTy_JTo_;
-            this.roundPictureBox1.Location = new System.Drawing.Point(106, 191);
-            this.roundPictureBox1.Name = "roundPictureBox1";
-            this.roundPictureBox1.Size = new System.Drawing.Size(448, 310);
-            this.roundPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roundPictureBox1.TabIndex = 0;
-            this.roundPictureBox1.TabStop = false;
-            // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.White;
@@ -212,6 +212,7 @@
             this.txtPassword.Location = new System.Drawing.Point(55, 353);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPassword.Size = new System.Drawing.Size(401, 30);
             this.txtPassword.TabIndex = 29;
             this.txtPassword.UseSystemPasswordChar = true;
@@ -227,6 +228,7 @@
             this.txtUsername.Location = new System.Drawing.Point(55, 295);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUsername.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtUsername.Size = new System.Drawing.Size(401, 30);
             this.txtUsername.TabIndex = 23;
             this.txtUsername.Load += new System.EventHandler(this.roundedTextBox1_Load);
