@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnSalesReport = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,6 +68,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnUsers);
             this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.btnSalesReport);
             this.panel1.Controls.Add(this.label3);
@@ -83,6 +85,22 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnUsers
+            // 
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.FlatAppearance.BorderSize = 0;
+            this.btnUsers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btnUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.Location = new System.Drawing.Point(0, 401);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(206, 40);
+            this.btnUsers.TabIndex = 8;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.UseVisualStyleBackColor = true;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+            // 
             // btnSettings
             // 
             this.btnSettings.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -91,7 +109,7 @@
             this.btnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Location = new System.Drawing.Point(0, 401);
+            this.btnSettings.Location = new System.Drawing.Point(0, 452);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(206, 40);
             this.btnSettings.TabIndex = 7;
@@ -460,5 +478,6 @@
         private System.Windows.Forms.Label object_c2fb5781_842a_4911_9318_d8fcdb05fe49;
         private System.Windows.Forms.Label object_89685a54_714d_4e71_a47f_6face5ff2c47;
         private System.Windows.Forms.Label object_b23c08d9_8e62_4ae0_8c0a_cd80f855b881;
+        private System.Windows.Forms.Button btnUsers;
     }
 }

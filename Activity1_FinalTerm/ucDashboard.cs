@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,29 +17,60 @@ namespace Activity1_FinalTerm
         public ucDashboard()
         {
             InitializeComponent();
+
+        }
+
+        private void loadStats()
+        {
+            
+            try
+            {
+
+                using (OleDbConnection conn = Database.GetConnection())
+                {
+
+                    conn.Open();
+
+                    string q = @"SELECT 
+                                    COUNT(*) AS TotalProducts, 
+                                    SUM(IIF(Quantity > ReorderLevel, 1, 0)) AS InStock, 
+                                    SUM(IIF(Quantity > 0 AND Quantity <= ReorderLevel, 1, 0)) AS LowStock, 
+                                    SUM(IIF(Quantity <= 0, 1, 0)) AS OutOfStock 
+                                    FROM Products";
+
+                    using (OleDbCommand cmd = new OleDbCommand(q, conn))
+                    using (OleDbDataReader rdr = cmd.ExecuteReader())
+                    {
+
+                        if(rdr.Read())
+                        {
+                            lblTotalProducts.Text = rdr["TotalProducts"].ToString();
+                            lblInStock.Text = rdr["InStock"].ToString();
+                            lblLowStock.Text = rdr["LowStock"].ToString();
+                            lblOutOfStock.Text = rdr["OutOfStock"].ToString();
+                        }
+
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Statistic Error: " + ex.Message, "Statistics Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
         }
 
         private void ucDashboard_Load(object sender, EventArgs e)
         {
-            chart1.Series.Clear();
-
-            Series series = new Series("SalesData");
-            series.ChartType = SeriesChartType.Line;
-
-            series.Points.AddXY("Jan", 100);
-            series.Points.AddXY("Feb", 150);
-            series.Points.AddXY("Mar", 120);
-            series.Points.AddXY("Apr", 200);
-            series.Points.AddXY("May", 250);
-            series.Points.AddXY("Jun", 300);
-            series.Points.AddXY("Jul", 220);
-
-            chart1.ChartAreas[0].AxisY.LabelStyle.Format = "'₱'#,##0k";
-
-            chart1.Series.Add(series);
-
-            chart1.Titles.Clear();
-            chart1.Titles.Add("Sales Data");
+            if (!this.DesignMode)
+            {
+                loadStats();
+            }
+            
         }
     }
 }

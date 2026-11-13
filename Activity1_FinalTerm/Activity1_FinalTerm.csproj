@@ -51,6 +51,11 @@
   <ItemGroup>
     <Compile Include="ControlExtension.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="InventorySysDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventorySysDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ModernComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,6 +86,7 @@
     <Compile Include="RoundPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TextBoxHelper.cs" />
     <Compile Include="ucCustomers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,12 @@
     <Compile Include="ucSettings.Designer.cs">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUsers.Designer.cs">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +175,20 @@
     <EmbeddedResource Include="ucSettings.resx">
       <DependentUpon>ucSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucUsers.resx">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="InventorySysDataSet.xsc">
+      <DependentUpon>InventorySysDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventorySysDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventorySysDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventorySysDataSet.xss">
+      <DependentUpon>InventorySysDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -190,7 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="InventorySys.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\fTy_JTo_1.jpg" />
     <None Include="Resources\user.png" />

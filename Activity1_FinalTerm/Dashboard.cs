@@ -270,5 +270,14 @@ namespace Activity1_FinalTerm
             mainPanel.Controls.Add(settings);
             SetActiveButton(btnSettings);
         }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            mainPanel.Controls.Clear();
+            ucUsers users = new ucUsers();
+            users.Dock = DockStyle.Fill;
+            mainPanel.Controls.Add(users);
+            SetActiveButton(btnUsers);
+        }
     }
 }
